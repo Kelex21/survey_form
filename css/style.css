@@ -1,13 +1,15 @@
 /* Custom Variables */
+
 :root {
     --color-white: #f3f3f3;
-    --background: rgba(27, 27, 50, 0.8);;
+    --background: rgba(51, 51, 90, 0.8);
     --background-form: #1b1b32;
     --btn: #37af65;
+    --font: 'Poppins', sans-serif;
 }
 
-
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,5 +24,93 @@ html {
 }
 
 body {
-    background-image: url('');
+    font-family: var(--font);
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background-image: linear-gradient(var(--background), var(--background)), url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+form {
+    background: var(--background-form);
+    opacity: .8;
+    width: 50%;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group > label, p {
+    margin-bottom: 10px;
+}
+
+.form-group .form-control {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+.clue {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.input-radio {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.input-checkbox {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.input-textarea {
+    max-width: 96.3%;
+    height: 400px;
+    max-height: 200px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.submit-button {
+    padding: 15px 0;
+    border: none;
+    background: var(--btn);
+    font-size: 18px;
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 5px;
 }
