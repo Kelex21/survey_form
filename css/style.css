@@ -1,7 +1,26 @@
+/* Custom Variables */
+:root {
+    --color-white: #f3f3f3;
+    --background: rgba(27, 27, 50, 0.8);;
+    --background-form: #1b1b32;
+    --btn: #37af65;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
 html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+body {
+    background-image: url('');
 }
